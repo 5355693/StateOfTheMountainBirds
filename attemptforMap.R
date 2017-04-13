@@ -38,7 +38,7 @@ q <- q +
   geom_polygon(aes(x=long, y=lat, group=group), fill='grey', size=.2,color='darkolivegreen2', data=Neighborhoods, alpha=0) + 
   scale_x_longitude(xmin=-69, xmax=-75, step=-2) +
   scale_y_latitude(ymin=42, ymax=46, step=2) + 
-  labs(y=expression(paste("Latitude", ~degree)),x=expression(paste("Longitude", ~degree))) +
+  labs(y="Latitude", x="Longitude") +
   theme(axis.title.x=element_text(size=rel(2),color="ROYALBLUE"),
         axis.text.x = element_text(size = rel(1.5))) + coord_map(projection="mercator",xlim=c(-76.9, -66.9), ylim=c(40.8,47.8)) +
   theme(axis.title.y=element_text(size=rel(2),color="ROYALBLUE",angle = 90),
